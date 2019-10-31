@@ -7,24 +7,23 @@
         <meta description="Ask the Magic 8-Ball a question and see how it replies">
         <title>Magic 8-Ball</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
-
+        <script src="magic.js"></script>
     </head>
     <body>
-        <script>
-            var breakfast = 
-            {
-                name: "pancakes",
-                type: ["choco chip", "cinnamon swirl", "whipped cream"],
-                cost: 5,
-                panMethod: function()
-                {
-                    alert(this.type[1] + " " + name + "is the type of pancakes we are serving tonight");
-                }
-                
-            }
-            breakfast.panMethod();
-        </script>
+        <img src="m8_2.svg" class="caro" id="8ball" alt="A Magic 8 Ball." title="The Magic 8 Ball can help you make decisions." onmouseover="magicBack()"/>
+        <form onsubmit="conMagic()">
+            <input id="askMe" type="text" placeholder="Ask Your Question Here" size="75" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
         <h1 id="intro">Ask the Magic 8-Ball!</h1>
+        <div id="magicIns">
+            <p class="ins off" onclick="hideIns()">Instructions:</p>
+            <p>Take a few deep breaths, finding a natural rhythm.</p>
+            <p>Clear your mind; let all passing thoughts go with grace.</p>
+            <p class="on" onclick="showIns()">Be still and focus on what you want to ask the Magic 8 Ball, then type out your question.</p>
+        </div>
+        <div id="ans"></div> <!--Eventually display answers here, animation style.-->
     </body>
-
+    
 </html>

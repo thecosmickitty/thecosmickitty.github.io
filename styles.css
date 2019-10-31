@@ -1,0 +1,92 @@
+/*** FONTS ***/
+/* source-sans-pro-regular - latin */
+@font-face 
+{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+         url('../fonts/source-sans-pro-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/source-sans-pro-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* source-sans-pro-900 - latin */
+  @font-face 
+  {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Source Sans Pro Black'), local('SourceSansPro-Black'),
+         url('../fonts/source-sans-pro-v12-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/source-sans-pro-v12-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* open-sans-regular - latin */
+@font-face 
+{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('../fonts/open-sans-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body
+{
+  color: white;
+  background-color: midnightblue;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.caro
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+#intro
+{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+}
+.ins
+{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+}
+p
+{
+  font-family:'Open Sans';
+  font-style: normal;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 80%;
+}
+.on:hover
+{
+  cursor: pointer;
+}
+.off:hover
+{
+  cursor: pointer;
+}
+form
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
